@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSRS Contact Form</title>
+</head>
+<body>
+    <form name="vsrs-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you">
+        <input type="hidden" name="form-name" value="vsrs-contact" />
+        <input name="bot-field" />
+        <input type="text" name="name" />
+        <input type="text" name="company" />
+        <select name="service">
+            <option value="event-security">Event Security</option>
+            <option value="corporate-security">Corporate Security</option>
+            <option value="construction-security">Construction Security</option>
+            <option value="retail-security">Retail Security</option>
+            <option value="close-protection">Close Protection</option>
+            <option value="door-supervision">Door Supervision</option>
+            <option value="cctv-monitoring">CCTV Monitoring</option>
+            <option value="industrial-security">Industrial Security</option>
+            <option value="dog-handlers">Dog Handlers</option>
+            <option value="hospitality-security">Hospitality Security</option>
+            <option value="private-events">Private Events</option>
+            <option value="security-guards">Security Guards</option>
+            <option value="other">Other</option>
+        </select>
+        <textarea name="message"></textarea>
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
