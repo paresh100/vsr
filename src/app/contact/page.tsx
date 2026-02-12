@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import BoxyContactForm from '@/components/BoxyContactForm';
 
 export const metadata: Metadata = {
     title: 'Contact Us | Vision Security Recruitment Services Ltd',
@@ -95,64 +96,8 @@ export default function ContactPage() {
                         </div>
 
                         {/* Contact Form */}
-                        <div className="bg-gray-50 p-8 rounded-sm border border-gray-100 shadow-sm">
-                            <h2 className="text-2xl font-bold text-navy mb-6">Send us a Message</h2>
-                            <form
-                                name="vsrs-contact"
-                                method="POST"
-                                action="/thank-you"
-                                data-netlify="true"
-                                data-netlify-honeypot="bot-field"
-                                className="space-y-6"
-                            >
-                                <input type="hidden" name="form-name" value="vsrs-contact" />
-                                <p className="hidden">
-                                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-                                </p>
-
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div>
-                                        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                                        <input type="text" name="name" id="name" required className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-navy focus:ring-1 focus:ring-navy outline-none transition-all" />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
-                                        <input type="text" name="company" id="company" className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-navy focus:ring-1 focus:ring-navy outline-none transition-all" />
-                                    </div>
-                                </div>
-
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                    <div>
-                                        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                                        <input type="email" name="email" id="email" required className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-navy focus:ring-1 focus:ring-navy outline-none transition-all" />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-                                        <input type="tel" name="phone" id="phone" className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-navy focus:ring-1 focus:ring-navy outline-none transition-all" />
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">Service Required</label>
-                                    <select name="service" id="service" className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-navy focus:ring-1 focus:ring-navy outline-none transition-all">
-                                        <option value="corporate-security">Corporate Security</option>
-                                        <option value="event-security">Event Security</option>
-                                        <option value="construction-security">Construction Security</option>
-                                        <option value="retail-security">Retail Security</option>
-                                        <option value="close-protection">Close Protection</option>
-                                        <option value="other">Other / General Inquiry</option>
-                                    </select>
-                                </div>
-
-                                <div>
-                                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                                    <textarea name="message" id="message" rows={4} required className="w-full px-4 py-3 rounded-sm border border-gray-300 focus:border-navy focus:ring-1 focus:ring-navy outline-none transition-all"></textarea>
-                                </div>
-
-                                <button type="submit" className="w-full bg-gold text-navy font-bold py-4 rounded-sm hover:bg-navy hover:text-white transition-colors uppercase tracking-wide">
-                                    Send Message
-                                </button>
-                            </form>
+                        <div className="relative">
+                            <BoxyContactForm />
                         </div>
 
                     </div>

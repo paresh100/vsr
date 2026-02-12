@@ -3,12 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #0E1A2B;
-  
+
   /* Brand Colors */
   --navy: #0E1A2B;
   --gold: #C8A24D;
+  --dark-gold: #997B30;
+  /* Accessible Gold for Text on White */
   --white: #ffffff;
-  --charcoal: #333333;
+  /* Moving Border Colors */
+  --sky-500: #0ea5e9;
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
 }
 
 @theme inline {
@@ -18,7 +23,7 @@
   --color-gold: var(--gold);
   --color-white: var(--white);
   --color-charcoal: var(--charcoal);
-  
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -29,4 +34,24 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-dark-gold {
+    color: var(--dark-gold);
+  }
+
+  .animate-ken-burns {
+    animation: ken-burns 15s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+
+  100% {
+    transform: scale(1.15) translate(-3%, -1%);
+  }
 }
