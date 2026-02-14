@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import StructuredData from "@/components/seo/StructuredData";
 import MobileStickyCTA from "@/components/layout/MobileStickyCTA";
+import CookieConsent from "@/components/ui/CookieConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "VSRS",
     images: [
       {
-        url: "/images/hero image man image.png", // Fallback image
+        url: "/images/new-image-hero.png", // Primary OpenGraph image
         width: 1200,
         height: 630,
         alt: "VSRS Standard of Excellence",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vision Security Recruitment Services Ltd",
     description: "Premium security solutions for corporate and event sectors in London.",
-    images: ["/images/hero image man image.png"],
+    images: ["/images/new-image-hero.png"],
   },
   robots: {
     index: true,
@@ -84,6 +85,7 @@ export default function RootLayout({
         <Footer />
         <MobileStickyCTA />
         <StructuredData />
+        <CookieConsent />
 
         {/* Hidden static form for Netlify detection */}
         <form name="vsrs-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>

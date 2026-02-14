@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# temp/trash
+dev.log
+test-server.js
+_assets_backup/
+temp_skills_source/
+node_modules_trash_*/
+.agent/
+.gemini/

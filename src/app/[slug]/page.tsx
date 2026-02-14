@@ -26,6 +26,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title: service.title,
             description: service.description,
             url: `https://vsrs.co.uk/${slug}`,
+            images: [
+                {
+                    url: service.image,
+                    width: 1200,
+                    height: 630,
+                    alt: service.title,
+                }
+            ],
             type: 'article',
         },
     };
