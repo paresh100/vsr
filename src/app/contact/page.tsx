@@ -118,7 +118,7 @@ export default function ContactPage() {
             </section>
 
             {/* Hidden form for Netlify detection at build time */}
-            <form name="vsrs-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+            <form name="vsrs-contact" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
                 <input type="hidden" name="form-name" value="vsrs-contact" />
                 <p hidden>
                     <label>Don&apos;t fill this out: <input name="bot-field" /></label>
