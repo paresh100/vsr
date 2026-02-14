@@ -84,7 +84,7 @@ export default function Home() {
             <MotionWrapper delay={0.5} className="hidden lg:block relative h-[600px] w-full max-w-md mx-auto">
               <div className="h-full w-full rounded-2xl border-2 border-white/10 shadow-[0_0_60px_30px_rgba(200,162,77,0.5)] bg-gold/5 backdrop-blur-sm overflow-hidden">
                 <Image
-                  src="/images/new-image-hero.jpg"
+                  src="/images/hero-sia-image.PNG"
                   alt="Professional Security Guard"
                   fill
                   className="object-cover object-top"

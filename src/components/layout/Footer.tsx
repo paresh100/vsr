@@ -68,7 +68,7 @@ export function Footer() {
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
                     <p>&copy; {new Date().getFullYear()} Vision Security Recruitment Services Ltd. All rights reserved.</p>
-                    <p className="mt-2 md:mt-0">Registered in England & Wales.</p>
+                    <p className="mt-2 md:mt-0">Registered in England & Wales. <span className="mx-2">|</span> Designed by <a href="https://rapidpaceai.cc/" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">RapidPaceAI</a></p>
                 </div>
             </div>
         </footer>

@@ -14,7 +14,7 @@ export default function RecruitmentPage() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/corporate image of group.png"
+                        src="/images/corporate-image-of-group.jpg"
                         alt="Join VSRS Team"
                         fill
                         className="object-cover opacity-40"
