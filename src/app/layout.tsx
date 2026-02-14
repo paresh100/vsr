@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google"; // Using Geist for modern corporate look
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -84,6 +84,27 @@ export default function RootLayout({
         <Footer />
         <MobileStickyCTA />
         <StructuredData />
+
+        {/* Hidden static form for Netlify detection */}
+        <form name="vsrs-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+          <input type="hidden" name="form-name" value="vsrs-contact" />
+          <p hidden>
+            <label>Don't fill this out: <input name="bot-field" /></label>
+          </p>
+          <input type="text" name="name" />
+          <input type="text" name="company" />
+          <input type="email" name="email" />
+          <input type="tel" name="phone" />
+          <select name="service">
+            <option value="corporate-security">Corporate Security</option>
+            <option value="event-security">Event Security</option>
+            <option value="construction-security">Construction Security</option>
+            <option value="retail-security">Retail Security</option>
+            <option value="close-protection">Close Protection</option>
+            <option value="other">Other / General Inquiry</option>
+          </select>
+          <textarea name="message"></textarea>
+        </form>
       </body>
     </html>
   );

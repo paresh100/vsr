@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import BoxyContactForm from '@/components/BoxyContactForm';
 
@@ -11,8 +12,20 @@ export default function ContactPage() {
     return (
         <div className="bg-white">
             {/* Header */}
-            <section className="bg-navy text-white py-20">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <section className="relative bg-navy text-white py-20 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/london-skyline.png"
+                        alt="Contact VSRS London"
+                        fill
+                        className="object-cover opacity-40"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/60 to-navy/80" />
+                </div>
+
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact VSRS</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                         Get in touch to discuss your security requirements. We operate 24/7 across London.
@@ -103,6 +116,27 @@ export default function ContactPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Hidden form for Netlify detection at build time */}
+            <form name="vsrs-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+                <input type="hidden" name="form-name" value="vsrs-contact" />
+                <p hidden>
+                    <label>Don&apos;t fill this out: <input name="bot-field" /></label>
+                </p>
+                <input type="text" name="name" />
+                <input type="text" name="company" />
+                <input type="email" name="email" />
+                <input type="tel" name="phone" />
+                <select name="service">
+                    <option value="corporate-security">Corporate Security</option>
+                    <option value="event-security">Event Security</option>
+                    <option value="construction-security">Construction Security</option>
+                    <option value="retail-security">Retail Security</option>
+                    <option value="close-protection">Close Protection</option>
+                    <option value="other">Other / General Inquiry</option>
+                </select>
+                <textarea name="message"></textarea>
+            </form>
         </div>
     );
 }

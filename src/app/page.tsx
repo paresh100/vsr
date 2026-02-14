@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ShieldCheck, Users, Clock, CheckCircle2 } from 'lucide-react';
 import MotionWrapper from '@/components/MotionWrapper';
-import { Button } from "@/components/ui/moving-border";
+import { GlowingEffect } from '@/components/ui/glowing-effect';
 
 export default function Home() {
   return (
@@ -126,14 +126,24 @@ export default function Home() {
               }
             ].map((item, idx) => (
               <MotionWrapper key={idx} delay={idx * 0.2}>
-                <div className="bg-gray-50 p-8 rounded-sm border border-gray-100 hover:border-gold/30 hover:shadow-lg transition-all group h-full">
-                  <div className="bg-navy w-14 h-14 rounded-sm flex items-center justify-center mb-6 group-hover:bg-gold transition-colors">
-                    <item.icon className="w-7 h-7 text-white" />
+                <div className="relative h-full rounded-lg border-[0.75px] border-gray-200 p-2">
+                  <GlowingEffect
+                    spread={40}
+                    glow={true}
+                    disabled={false}
+                    proximity={64}
+                    inactiveZone={0.01}
+                    borderWidth={2}
+                  />
+                  <div className="relative flex h-full flex-col bg-gray-50 p-8 rounded-md border-[0.75px] border-gray-100 group">
+                    <div className="bg-navy w-14 h-14 rounded-sm flex items-center justify-center mb-6 group-hover:bg-gold transition-colors">
+                      <item.icon className="w-7 h-7 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-navy mb-4">{item.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {item.desc}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-bold text-navy mb-4">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {item.desc}
-                  </p>
                 </div>
               </MotionWrapper>
             ))}
@@ -166,15 +176,25 @@ export default function Home() {
               "Hospitality Security", "Private Event Security", "Security Guards"
             ].map((service, idx) => (
               <MotionWrapper key={idx} delay={idx * 0.05}>
-                <Link
-                  href={`/${service.toLowerCase().replace(/ /g, '-')}-london`}
-                  className="bg-white p-6 rounded-sm shadow-sm hover:shadow-md transition-all border-l-4 border-transparent hover:border-gold group block h-full"
-                >
-                  <h3 className="text-lg font-bold text-navy group-hover:text-gold transition-colors flex justify-between items-center">
-                    {service}
-                    <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </h3>
-                </Link>
+                <div className="relative h-full rounded-lg border-[0.75px] border-gray-200 p-2">
+                  <GlowingEffect
+                    spread={30}
+                    glow={true}
+                    disabled={false}
+                    proximity={64}
+                    inactiveZone={0.01}
+                    borderWidth={2}
+                  />
+                  <Link
+                    href={`/${service.toLowerCase().replace(/ /g, '-')}-london`}
+                    className="relative bg-white p-6 rounded-md border-[0.75px] border-gray-100 hover:shadow-md transition-all group block h-full flex items-center"
+                  >
+                    <h3 className="text-lg font-bold text-navy group-hover:text-gold transition-colors flex justify-between items-center w-full">
+                      {service}
+                      <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </h3>
+                  </Link>
+                </div>
               </MotionWrapper>
             ))}
           </div>
@@ -243,31 +263,17 @@ export default function Home() {
                 Contact our team specifically for competitive rates available upon request. We provide tailored solutions for your specific security requirements.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact">
-                  <Button
-                    as="div"
-                    borderRadius="0.125rem"
-                    rx="2px"
-                    ry="2px"
-                    className="bg-navy text-white font-bold tracking-widest uppercase text-sm hover:text-gold transition-colors"
-                    borderClassName="bg-[radial-gradient(closest-side,var(--gold),transparent)]"
-                    containerClassName="w-56 h-16"
-                  >
-                    Get a Quote
-                  </Button>
+                <Link
+                  href="/contact"
+                  className="px-8 py-4 bg-gold text-navy font-bold tracking-widest uppercase text-sm hover:bg-gold/90 transition-all duration-300 text-center rounded-sm"
+                >
+                  Get a Quote
                 </Link>
-                <Link href="tel:02085602309">
-                  <Button
-                    as="div"
-                    borderRadius="0.125rem"
-                    rx="2px"
-                    ry="2px"
-                    className="bg-white text-navy font-bold tracking-widest uppercase text-sm border border-navy"
-                    borderClassName="bg-[radial-gradient(closest-side,var(--navy),transparent)]"
-                    containerClassName="w-56 h-16 bg-navy"
-                  >
-                    Call 020 8560 2309
-                  </Button>
+                <Link
+                  href="tel:02085602309"
+                  className="px-8 py-4 bg-white text-navy font-bold tracking-widest uppercase text-sm hover:bg-gray-100 border border-navy transition-all duration-300 text-center rounded-sm"
+                >
+                  Call 020 8560 2309
                 </Link>
               </div>
             </div>

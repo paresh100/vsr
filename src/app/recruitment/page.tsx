@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: 'Recruitment - Join the Team | Vision Security Recruitment Services Ltd',
@@ -9,8 +10,20 @@ export const metadata: Metadata = {
 export default function RecruitmentPage() {
     return (
         <div className="bg-white">
-            <section className="bg-navy text-white py-20">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <section className="relative bg-navy text-white py-20 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/corporate image of group.png"
+                        alt="Join VSRS Team"
+                        fill
+                        className="object-cover opacity-40"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/60 to-navy/80" />
+                </div>
+
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Join the VSRS Team</h1>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
                         We are always looking for professional, disciplined, and ambitious individuals to join our ranks.

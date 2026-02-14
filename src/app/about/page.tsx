@@ -11,11 +11,23 @@ export default function AboutPage() {
     return (
         <div className="bg-white">
             {/* Hero */}
-            <section className="bg-navy text-white py-20">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="relative bg-navy text-white py-20 overflow-hidden">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/images/corporate image of group.png"
+                        alt="VSRS Security Team"
+                        fill
+                        className="object-cover opacity-40"
+                        priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/60 to-navy/80" />
+                </div>
+
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">About VSRS</h1>
                     <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
-                        Established in 2016, Vision Security Recruitment Services Ltd has grown into one of London’s most respected boutique security providers.
+                        Established in 2016, Vision Security Recruitment Services Ltd has grown into one of London's most respected boutique security providers.
                     </p>
                 </div>
             </section>

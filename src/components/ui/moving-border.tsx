@@ -50,10 +50,13 @@ export function Button({
             >
                 <MovingBorder duration={duration} rx={rx} ry={ry}>
                     <div
-                        className={cn(
-                            "h-5 w-5 opacity-[0.8] bg-[radial-gradient(closest-side,var(--sky-500),transparent)]",
-                            borderClassName
-                        )}
+                        style={{
+                            height: '12px',
+                            width: '120px',
+                            background: 'linear-gradient(90deg, transparent 0%, #C8A24D 50%, transparent 100%)',
+                            filter: 'blur(6px)',
+                            opacity: 1,
+                        }}
                     />
                 </MovingBorder>
             </div>

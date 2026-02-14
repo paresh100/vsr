@@ -1,18 +1,22 @@
+import { LucideIcon } from 'lucide-react';
+
 export const servicesData: Record<string, {
     title: string;
     description: string;
     content: string[];
     benefits: string[];
+    icon: string;
 }> = {
     "event-security-london": {
         title: "Event Security Services in London",
         description: "Professional crowd management and security for high-profile events, corporate functions, and private gatherings.",
         content: [
-            "Vision Security Recruitment Services Ltd delivers comprehensive event security solutions tailored to the unique dynamics of London’s event sector. From intimate private parties to large-scale corporate conferences, our personnel ensure a safe, orderly, and welcoming environment.",
+            "Vision Security Recruitment Services Ltd delivers comprehensive event security solutions tailored to the unique dynamics of London's event sector. From intimate private parties to large-scale corporate conferences, our personnel ensure a safe, orderly, and welcoming environment.",
             "Our event security teams are trained in crowd control, conflict de-escalation, and emergency response. We work closely with event organizers to assess risks and develop a security plan that remains discreet yet effective.",
             "Whether you require visible door supervision or low-profile close protection for VIP guests, VSRS adapts to the tone and requirements of your event."
         ],
-        benefits: ["Crowd Management & Flow Control", "VIP & Guest List Management", "Emergency Response Planning", "Discreet & Uniformed Officers"]
+        benefits: ["Crowd Management & Flow Control", "VIP & Guest List Management", "Emergency Response Planning", "Discreet & Uniformed Officers"],
+        icon: "Users"
     },
     "corporate-security-london": {
         title: "Corporate Security Services London",
@@ -22,7 +26,8 @@ export const servicesData: Record<string, {
             "Our corporate security officers manage access control, monitor CCTV systems, and perform regular patrols to deter unauthorized access and ensure the safety of your staff and visitors.",
             "We understand that front-of-house security is often the first point of contact for your clients. Our officers are selected for their professional demeanor and communication skills."
         ],
-        benefits: ["Access Control & Reception Duties", "CCTV Monitoring", "Asset Protection", "Out-of-hours Patrols"]
+        benefits: ["Access Control & Reception Duties", "CCTV Monitoring", "Asset Protection", "Out-of-hours Patrols"],
+        icon: "Building2"
     },
     "construction-site-security-london": {
         title: "Construction Site Security London",
@@ -32,7 +37,8 @@ export const servicesData: Record<string, {
             "Our construction security services include perimeter patrols, gatehouse management, and 24/7 manned guarding. We utilize both static guards and mobile patrols to ensure comprehensive coverage of your site.",
             "We also ensure Health & Safety compliance, logging all visitors and deliveries to maintain a secure and accountable site environment."
         ],
-        benefits: ["Perimeter Security", "Gatehouse & Access Control", "Theft & Vandalism Prevention", "Health & Safety Compliance"]
+        benefits: ["Perimeter Security", "Gatehouse & Access Control", "Theft & Vandalism Prevention", "Health & Safety Compliance"],
+        icon: "HardHat"
     },
     "retail-security-london": {
         title: "Retail Security Services London",
@@ -42,7 +48,8 @@ export const servicesData: Record<string, {
             "Our officers are skilled in loss prevention techniques and conflict management. We work with store management to identify vulnerabilities and implement effective security strategies.",
             "Whether for high-end luxury boutiques or high-street retailers, our security presence reassures customers and protects your bottom line."
         ],
-        benefits: ["Loss Prevention", "Store Detective Services", "Staff Protection", "Customer Service Focus"]
+        benefits: ["Loss Prevention", "Store Detective Services", "Staff Protection", "Customer Service Focus"],
+        icon: "ShoppingBag"
     },
     "close-protection-london": {
         title: "Close Protection Services London",
@@ -52,7 +59,8 @@ export const servicesData: Record<string, {
             "We conduct thorough risk assessments and route planning to ensure your safety and privacy are maintained at all times. Our approach is flexible, offering both overt and covert protection as required.",
             "Based in London, we understand the complexities of moving securely through the city, ensuring your schedule proceeds without disruption."
         ],
-        benefits: ["Personal Bodyguards", "Secure Transport & Logistics", "Residential Security", "Threat Assessment"]
+        benefits: ["Personal Bodyguards", "Secure Transport & Logistics", "Residential Security", "Threat Assessment"],
+        icon: "ShieldCheck"
     },
     "door-supervisors-london": {
         title: "Door Supervisors London",
@@ -62,7 +70,8 @@ export const servicesData: Record<string, {
             "Our door staff are ambassadors for your venue. They ensure a warm welcome while strictly enforcing your venue's policies on entry and conduct.",
             "We prioritize communication and public safety, ensuring your venue operates smoothly and complies with all licensing objectives."
         ],
-        benefits: ["ID Checks & Entry Control", "Conflict Management", "Capacity Management", "Customer Safety"]
+        benefits: ["ID Checks & Entry Control", "Conflict Management", "Capacity Management", "Customer Safety"],
+        icon: "DoorOpen"
     },
     "cctv-monitoring-london": {
         title: "CCTV Monitoring Services London",
@@ -72,7 +81,8 @@ export const servicesData: Record<string, {
             "Our monitoring services cover commercial properties, construction sites, and residential complexes. We can integrate with your existing systems or provide rapid-deployment solutions.",
             "Detailed reporting and incident logging ensure you have a clear audit trail of all activity on your premises."
         ],
-        benefits: ["24/7 Remote Monitoring", "Incident Response", "system Health Checks", "Evidential Recording"]
+        benefits: ["24/7 Remote Monitoring", "Incident Response", "system Health Checks", "Evidential Recording"],
+        icon: "Camera"
     },
     "industrial-security-london": {
         title: "Industrial & Warehouse Security London",
@@ -82,7 +92,8 @@ export const servicesData: Record<string, {
             "We understand the logistics supply chain and the importance of preventing shrinkage and unauthorized access. Our officers verify varied vehicles and personnel entering and exiting your facility.",
             "Our presence minimizes operational downtime caused by security breaches."
         ],
-        benefits: ["Gatehouse Operations", "Mobile Patrols", "Stock Loss Prevention", "Vehicle Checks"]
+        benefits: ["Gatehouse Operations", "Mobile Patrols", "Stock Loss Prevention", "Vehicle Checks"],
+        icon: "Warehouse"
     },
     "dog-handlers-london": {
         title: "Security Dog Handlers London",
@@ -92,17 +103,19 @@ export const servicesData: Record<string, {
             "A dog unit can search areas faster and more effectively than a human patrol alone. They are ideal for construction sites, vacant properties, and events.",
             "All our handlers operate in accordance with strict welfare and operational standards."
         ],
-        benefits: ["High Visual Deterrent", "Perimeter Protection", "Rapid Area Search", "Nasdu Certified Handlers"]
+        benefits: ["High Visual Deterrent", "Perimeter Protection", "Rapid Area Search", "Nasdu Certified Handlers"],
+        icon: "Dog"
     },
     "hospitality-security-london": {
         title: "Hospitality Security London",
         description: "Ensuring guest safety in hotels, restaurants, and private members clubs.",
         content: [
-            "London’s hospitality sector demands a security presence that balances safety with impeccable service. VSRS officers are trained to act as concierge-security, enhancing the guest experience.",
+            "London's hospitality sector demands a security presence that balances safety with impeccable service. VSRS officers are trained to act as concierge-security, enhancing the guest experience.",
             "We protect your guests, staff, and reputation. From front-of-house duties to key-holding and night audits, our team integrates with your hotel operations.",
             "We handle incidents with discretion, ensuring the comfort and privacy of valid guests is never compromised."
         ],
-        benefits: ["Concierge Security", "Guest Safety", "Key Holding", "Luggage & Access Control"]
+        benefits: ["Concierge Security", "Guest Safety", "Key Holding", "Luggage & Access Control"],
+        icon: "Hotel"
     },
     "private-event-security-london": {
         title: "Private Event Security London",
@@ -112,7 +125,8 @@ export const servicesData: Record<string, {
             "We handle guest lists, manage paparazzi or uninvited guests, and ensure the event runs smoothly. Our team can dress in formal wear to blend seamlessly with your event.",
             "From weddings to private parties, we provide peace of mind so you can focus on hosting."
         ],
-        benefits: ["Guest List Management", "Discreet Presence", "Venue Protection", "Traffic Management"]
+        benefits: ["Guest List Management", "Discreet Presence", "Venue Protection", "Traffic Management"],
+        icon: "PartyPopper"
     },
     "security-guards-london": {
         title: "Manned Security Guarding London",
@@ -122,6 +136,7 @@ export const servicesData: Record<string, {
             "Our guards are more than a physical presence; they are trained observers and first responders. They perform regular patrols, report hazards, and ensure your site remains secure.",
             "We offer flexible coverage options, from ad-hoc requirements to long-term contracts."
         ],
-        benefits: ["Static Guarding", "Mobile Patrols", "Lock & Unlock Services", "Vacant Property Checks"]
+        benefits: ["Static Guarding", "Mobile Patrols", "Lock & Unlock Services", "Vacant Property Checks"],
+        icon: "Shield"
     }
 };
