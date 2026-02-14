@@ -69,6 +69,7 @@ export default function BoxyContactForm() {
             <form
                 name="vsrs-contact"
                 method="POST"
+                action="/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
