@@ -84,7 +84,7 @@ export default function Home() {
             <MotionWrapper delay={0.5} className="hidden lg:block relative h-[600px] w-full max-w-md mx-auto">
               <div className="h-full w-full rounded-2xl border-2 border-white/10 shadow-[0_0_60px_30px_rgba(200,162,77,0.5)] bg-gold/5 backdrop-blur-sm overflow-hidden">
                 <Image
-                  src="/images/new-image-hero.png"
+                  src="/images/new-image-hero.jpg"
                   alt="Professional Security Guard"
                   fill
                   className="object-cover object-top"
@@ -242,7 +242,7 @@ export default function Home() {
             <MotionWrapper delay={0.3} className="relative h-[400px] lg:h-[500px]">
               <div className="h-full w-full rounded-sm overflow-hidden border-4 border-white/10">
                 <Image
-                  src="/images/corporate-image-of-group.png"
+                  src="/images/corporate-image-of-group.jpg"
                   alt="VSRS Security Team"
                   fill
                   className="object-cover"
