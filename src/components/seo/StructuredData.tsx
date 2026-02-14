@@ -4,7 +4,7 @@ export default function StructuredData() {
         "@type": "SecurityService",
         "name": "Vision Security Recruitment Services Ltd",
         "alternateName": "VSRS",
-        "image": "https://vsrs.co.uk/images/hero%20image%20man%20image.png",
+        "image": "https://vsrs.co.uk/images/hero-image-man-image.png",
         "description": "Premium security services in London. Specializing in corporate security, event security, and close protection.",
         "address": {
             "@type": "PostalAddress",

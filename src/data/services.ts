@@ -18,7 +18,7 @@ export const servicesData: Record<string, {
         ],
         benefits: ["Crowd Management & Flow Control", "VIP & Guest List Management", "Emergency Response Planning", "Discreet & Uniformed Officers"],
         icon: "Users",
-        image: "/images/Professional security team portrait.png"
+        image: "/images/professional-security-team-portrait.png"
     },
     "corporate-security-london": {
         title: "Corporate Security Services London",
@@ -30,7 +30,7 @@ export const servicesData: Record<string, {
         ],
         benefits: ["Access Control & Reception Duties", "CCTV Monitoring", "Asset Protection", "Out-of-hours Patrols"],
         icon: "Building2",
-        image: "/images/corporate image of group.png"
+        image: "/images/corporate-image-of-group.png"
     },
     "construction-site-security-london": {
         title: "Construction Site Security London",
@@ -42,7 +42,7 @@ export const servicesData: Record<string, {
         ],
         benefits: ["Perimeter Security", "Gatehouse & Access Control", "Theft & Vandalism Prevention", "Health & Safety Compliance"],
         icon: "HardHat",
-        image: "/images/hero image man image.png"
+        image: "/images/hero-image-man-image.png"
     },
     "retail-security-london": {
         title: "Retail Security Services London",
@@ -54,7 +54,7 @@ export const servicesData: Record<string, {
         ],
         benefits: ["Loss Prevention", "Store Detective Services", "Staff Protection", "Customer Service Focus"],
         icon: "ShoppingBag",
-        image: "/images/hero image man image.png"
+        image: "/images/hero-image-man-image.png"
     },
     "close-protection-london": {
         title: "Close Protection Services London",
@@ -78,7 +78,7 @@ export const servicesData: Record<string, {
         ],
         benefits: ["ID Checks & Entry Control", "Conflict Management", "Capacity Management", "Customer Safety"],
         icon: "DoorOpen",
-        image: "/images/Professional security team portrait.png"
+        image: "/images/professional-security-team-portrait.png"
     },
     "cctv-monitoring-london": {
         title: "CCTV Monitoring Services London",
@@ -126,7 +126,7 @@ export const servicesData: Record<string, {
         ],
         benefits: ["Concierge Security", "Guest Safety", "Key Holding", "Luggage & Access Control"],
         icon: "Hotel",
-        image: "/images/corporate image of group.png"
+        image: "/images/corporate-image-of-group.png"
     },
     "private-event-security-london": {
         title: "Private Event Security London",
@@ -138,7 +138,7 @@ export const servicesData: Record<string, {
         ],
         benefits: ["Guest List Management", "Discreet Presence", "Venue Protection", "Traffic Management"],
         icon: "PartyPopper",
-        image: "/images/Professional security team portrait.png"
+        image: "/images/professional-security-team-portrait.png"
     },
     "security-guards-london": {
         title: "Manned Security Guarding London",
@@ -150,6 +150,6 @@ export const servicesData: Record<string, {
         ],
         benefits: ["Static Guarding", "Mobile Patrols", "Lock & Unlock Services", "Vacant Property Checks"],
         icon: "Shield",
-        image: "/images/hero image man image.png"
+        image: "/images/hero-image-man-image.png"
     }
 };

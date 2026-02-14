@@ -242,7 +242,7 @@ export default function Home() {
             <MotionWrapper delay={0.3} className="relative h-[400px] lg:h-[500px]">
               <div className="h-full w-full rounded-sm overflow-hidden border-4 border-white/10">
                 <Image
-                  src="/images/corporate image of group.png"
+                  src="/images/corporate-image-of-group.png"
                   alt="VSRS Security Team"
                   fill
                   className="object-cover"

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vsrs.co.uk"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || process.env.URL || "https://vsrs.co.uk"),
   title: {
     default: "Vision Security Recruitment Services Ltd | Premium Security London",
     template: "%s | VSRS Security London",

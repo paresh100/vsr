@@ -15,7 +15,7 @@ export default function AboutPage() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/corporate image of group.png"
+                        src="/images/corporate-image-of-group.png"
                         alt="VSRS Security Team"
                         fill
                         className="object-cover opacity-40"
@@ -63,7 +63,7 @@ export default function AboutPage() {
 
                         <div className="relative h-[500px] rounded-sm overflow-hidden shadow-lg">
                             <Image
-                                src="/images/Professional security team portrait.png"
+                                src="/images/professional-security-team-portrait.png"
                                 alt="VSRS Team"
                                 fill
                                 className="object-cover"
