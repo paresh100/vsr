@@ -48,3 +48,4 @@ temp_skills_source/
 node_modules_trash_*/
 .agent/
 .gemini/
+_superpowers_ref/

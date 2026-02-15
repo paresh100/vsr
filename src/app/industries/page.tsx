@@ -44,10 +44,10 @@ export default function IndustriesPage() {
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/london-skyline.png"
-                        alt="London Cityscape"
+                        src="/images/industries-banner-bg.png"
+                        alt="Diverse Industries Security"
                         fill
-                        className="object-cover opacity-40"
+                        className="object-cover opacity-50"
                         priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/60 to-navy/80" />
