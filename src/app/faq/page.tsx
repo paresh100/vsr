@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import FAQ from '@/components/sections/FAQ';
+import TestimonialsSection from '@/components/sections/Testimonials';
 
 export const metadata: Metadata = {
     title: 'Frequently Asked Questions | Vision Security Recruitment Services Ltd',
@@ -32,6 +33,8 @@ export default function FAQPage() {
             </div>
 
             <FAQ />
+
+            <TestimonialsSection />
         </div>
     );
 }

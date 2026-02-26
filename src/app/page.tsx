@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, ShieldCheck, Users, Clock, CheckCircle2 } from 'lucide-react';
 import MotionWrapper from '@/components/MotionWrapper';
 import { GlowingEffect } from '@/components/ui/glowing-effect';
+import TestimonialsSection from '@/components/sections/Testimonials';
 
 export default function Home() {
   return (
@@ -252,6 +253,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* TESTIMONIALS */}
+      <TestimonialsSection />
 
       {/* CTA SECTION */}
       <section className="py-24 bg-white relative">

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Building2, HardHat, Store, Trophy, Landmark } from 'lucide-react';
 import { GlowingEffect } from '@/components/ui/glowing-effect';
+import TestimonialsSection from '@/components/sections/Testimonials';
 
 export const metadata: Metadata = {
     title: 'Industries We Serve | Vision Security Recruitment Services Ltd',
@@ -90,6 +91,8 @@ export default function IndustriesPage() {
                     </div>
                 </div>
             </section>
+            
+            <TestimonialsSection />
         </div>
     );
 }

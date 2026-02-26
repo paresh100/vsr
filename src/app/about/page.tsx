@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
+import TestimonialsSection from '@/components/sections/Testimonials';
 
 export const metadata: Metadata = {
     title: 'About Us | Vision Security Recruitment Services Ltd',
@@ -104,6 +105,9 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Testimonials */}
+            <TestimonialsSection />
         </div>
     );
 }

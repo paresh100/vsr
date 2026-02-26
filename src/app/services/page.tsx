@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import { servicesData } from '@/data/services';
 import { GlowingEffect } from '@/components/ui/glowing-effect';
+import TestimonialsSection from '@/components/sections/Testimonials';
 
 const iconMap: Record<string, LucideIcon> = {
     Users,
@@ -104,6 +105,8 @@ export default function ServicesIndexPage() {
                     </div>
                 </div>
             </section>
+
+            <TestimonialsSection />
 
             <section className="py-20 bg-gray-900 text-white text-center">
                 <div className="container mx-auto px-4">

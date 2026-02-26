@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import TestimonialsSection from '@/components/sections/Testimonials';
 
 export const metadata: Metadata = {
     title: 'Recruitment - Join the Team | Vision Security Recruitment Services Ltd',
@@ -65,6 +66,8 @@ export default function RecruitmentPage() {
                     </p>
                 </div>
             </section>
+
+            <TestimonialsSection />
         </div>
     );
 }
