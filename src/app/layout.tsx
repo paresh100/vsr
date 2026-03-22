@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "VSRS",
     images: [
       {
-        url: "/images/og-image.jpg?v=2", // Optimized OpenGraph image
+        url: "https://vsrs.co.uk/images/og-image.jpg?v=2", // Optimized OpenGraph image
         width: 1200,
         height: 630,
         alt: "VSRS Standard of Excellence",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vision Security Recruitment Services Ltd",
     description: "Premium security solutions for corporate and event sectors in London.",
-    images: ["/images/og-image.jpg?v=2"],
+    images: ["https://vsrs.co.uk/images/og-image.jpg?v=2"],
   },
   robots: {
     index: true,

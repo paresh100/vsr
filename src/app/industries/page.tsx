@@ -8,6 +8,19 @@ import TestimonialsSection from '@/components/sections/Testimonials';
 export const metadata: Metadata = {
     title: 'Industries We Serve | Vision Security Recruitment Services Ltd',
     description: 'Specialized security expertise for Corporate, Construction, Retail, Events, and Public sectors in London.',
+    openGraph: {
+        title: 'Industries We Serve | Vision Security Recruitment Services Ltd',
+        description: 'Specialized security expertise for Corporate, Construction, Retail, Events, and Public sectors in London.',
+        url: 'https://vsrs.co.uk/industries',
+        images: [
+            {
+                url: 'https://vsrs.co.uk/images/og-image.jpg?v=2',
+                width: 1200,
+                height: 630,
+                alt: 'VSRS Industries Served',
+            }
+        ],
+    },
 };
 
 export default function IndustriesPage() {

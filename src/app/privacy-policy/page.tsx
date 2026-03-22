@@ -2,6 +2,18 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Privacy Policy | Vision Security Recruitment Services Ltd',
+    openGraph: {
+        title: 'Privacy Policy | Vision Security Recruitment Services Ltd',
+        url: 'https://vsrs.co.uk/privacy-policy',
+        images: [
+            {
+                url: 'https://vsrs.co.uk/images/og-image.jpg?v=2',
+                width: 1200,
+                height: 630,
+                alt: 'VSRS Privacy Policy',
+            }
+        ],
+    },
 };
 
 export default function PrivacyPolicyPage() {

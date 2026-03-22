@@ -6,6 +6,19 @@ import TestimonialsSection from '@/components/sections/Testimonials';
 export const metadata: Metadata = {
     title: 'About Us | Vision Security Recruitment Services Ltd',
     description: 'Established 2016. A trusted provider of professional security services in London with a focus on corporate, event, and industrial sectors.',
+    openGraph: {
+        title: 'About Us | Vision Security Recruitment Services Ltd',
+        description: 'Established 2016. A trusted provider of professional security services in London with a focus on corporate, event, and industrial sectors.',
+        url: 'https://vsrs.co.uk/about',
+        images: [
+            {
+                url: 'https://vsrs.co.uk/images/og-image.jpg?v=2',
+                width: 1200,
+                height: 630,
+                alt: 'About VSRS',
+            }
+        ],
+    },
 };
 
 export default function AboutPage() {

@@ -6,6 +6,19 @@ import TestimonialsSection from '@/components/sections/Testimonials';
 export const metadata: Metadata = {
     title: 'Frequently Asked Questions | Vision Security Recruitment Services Ltd',
     description: 'Common questions about our security services, licensing, coverage areas, and deployment times.',
+    openGraph: {
+        title: 'Frequently Asked Questions | Vision Security Recruitment Services Ltd',
+        description: 'Common questions about our security services, licensing, coverage areas, and deployment times.',
+        url: 'https://vsrs.co.uk/faq',
+        images: [
+            {
+                url: 'https://vsrs.co.uk/images/og-image.jpg?v=2',
+                width: 1200,
+                height: 630,
+                alt: 'VSRS FAQ',
+            }
+        ],
+    },
 };
 
 export default function FAQPage() {

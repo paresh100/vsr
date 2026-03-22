@@ -6,6 +6,19 @@ import TestimonialsSection from '@/components/sections/Testimonials';
 export const metadata: Metadata = {
     title: 'Recruitment - Join the Team | Vision Security Recruitment Services Ltd',
     description: 'Join London’s elite security team. We are always looking for professional, licensed security personnel.',
+    openGraph: {
+        title: 'Recruitment - Join the Team | Vision Security Recruitment Services Ltd',
+        description: 'Join London’s elite security team. We are always looking for professional, licensed security personnel.',
+        url: 'https://vsrs.co.uk/recruitment',
+        images: [
+            {
+                url: 'https://vsrs.co.uk/images/og-image.jpg?v=2',
+                width: 1200,
+                height: 630,
+                alt: 'Join VSRS Team',
+            }
+        ],
+    },
 };
 
 export default function RecruitmentPage() {

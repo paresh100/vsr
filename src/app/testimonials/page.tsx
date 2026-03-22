@@ -3,6 +3,19 @@ import TestimonialsSection from "@/components/sections/Testimonials";
 export const metadata = {
   title: "Clients Praise",
   description: "Read what our clients have to say about Vision Security Recruitment Services. Trusted by London's best venues, events, and corporations.",
+  openGraph: {
+    title: "Clients Praise | Vision Security Recruitment Services Ltd",
+    description: "Read what our clients have to say about Vision Security Recruitment Services. Trusted by London's best venues, events, and corporations.",
+    url: "https://vsrs.co.uk/testimonials",
+    images: [
+      {
+        url: "https://vsrs.co.uk/images/og-image.jpg?v=2",
+        width: 1200,
+        height: 630,
+        alt: "VSRS Testimonials",
+      }
+    ],
+  },
 };
 
 export default function TestimonialsPage() {

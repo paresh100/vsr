@@ -6,6 +6,19 @@ import BoxyContactForm from '@/components/BoxyContactForm';
 export const metadata: Metadata = {
     title: 'Contact Us | Vision Security Recruitment Services Ltd',
     description: 'Contact VSRS for premium security solutions in London. 020 8560 2309 | admin@vsrs4you.com',
+    openGraph: {
+        title: 'Contact Us | Vision Security Recruitment Services Ltd',
+        description: 'Contact VSRS for premium security solutions in London. 020 8560 2309 | admin@vsrs4you.com',
+        url: 'https://vsrs.co.uk/contact',
+        images: [
+            {
+                url: 'https://vsrs.co.uk/images/og-image.jpg?v=2',
+                width: 1200,
+                height: 630,
+                alt: 'Contact VSRS',
+            }
+        ],
+    },
 };
 
 export default function ContactPage() {

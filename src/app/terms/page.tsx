@@ -2,6 +2,18 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: 'Terms of Service | Vision Security Recruitment Services Ltd',
+    openGraph: {
+        title: 'Terms of Service | Vision Security Recruitment Services Ltd',
+        url: 'https://vsrs.co.uk/terms',
+        images: [
+            {
+                url: 'https://vsrs.co.uk/images/og-image.jpg?v=2',
+                width: 1200,
+                height: 630,
+                alt: 'VSRS Terms of Service',
+            }
+        ],
+    },
 };
 
 export default function TermsPage() {

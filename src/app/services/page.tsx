@@ -39,6 +39,19 @@ const iconMap: Record<string, LucideIcon> = {
 export const metadata: Metadata = {
     title: 'Our Services | Vision Security Recruitment Services Ltd',
     description: 'Comprehensive security solutions including corporate, event, construction, and close protection services across London.',
+    openGraph: {
+        title: 'Our Services | Vision Security Recruitment Services Ltd',
+        description: 'Comprehensive security solutions including corporate, event, construction, and close protection services across London.',
+        url: 'https://vsrs.co.uk/services',
+        images: [
+            {
+                url: 'https://vsrs.co.uk/images/og-image.jpg?v=2',
+                width: 1200,
+                height: 630,
+                alt: 'VSRS Security Services',
+            }
+        ],
+    },
 };
 
 export default function ServicesIndexPage() {
