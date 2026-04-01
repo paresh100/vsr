@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import StructuredData from "@/components/seo/StructuredData";
 import MobileStickyCTA from "@/components/layout/MobileStickyCTA";
 import CookieConsent from "@/components/ui/CookieConsent";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -87,6 +88,7 @@ export default function RootLayout({
         <MobileStickyCTA />
         <StructuredData />
         <CookieConsent />
+        <WhatsAppButton />
 
         {/* Hidden static form for Netlify detection */}
         <form name="vsrs-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
